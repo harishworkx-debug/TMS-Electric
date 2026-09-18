@@ -37,7 +37,7 @@ export function ServiceGrid({ locationSlug }: { locationSlug?: string }) {
             </div>
           </div>
           <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-amber-600">
-            Learn More
+            {s.shortTitle || s.title}
             <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </div>
         </Link>

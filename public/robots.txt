@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tmselectric.net/sitemap.xml
+Sitemap: https://www.tmselectric.net/sitemap.xml

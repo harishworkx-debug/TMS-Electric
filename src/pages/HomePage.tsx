@@ -88,6 +88,17 @@ export function HomePage() {
 
       <FaqSection faqs={homeFaqs} title={`${mainLocation.name} Electrician FAQs`} />
 
+      <section className="py-16 bg-white border-t border-slate-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-6">
+            Your Trusted Local Electrician in {mainLocation.name}, CA
+          </h2>
+          <p className="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
+            At {business.name}, we pride ourselves on delivering top-tier electrical services for residential and commercial properties. Whether you need a simple outlet repair, a complete electrical panel upgrade, or a custom lighting installation, our team of licensed professionals is here to help. We are dedicated to safety, quality, and customer satisfaction, ensuring that every project is completed to the highest standards. Thank you for choosing us as your go-to electrical contractor in North County San Diego.
+          </p>
+        </div>
+      </section>
+
       <ContactSection />
     </>
   );
