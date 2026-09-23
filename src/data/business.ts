@@ -4,7 +4,7 @@ export const business = {
   domain: 'tmselectric.net',
   phone: '+1 760-673-8092',
   phoneRaw: '17606738092',
-  phoneDisplay: '(760) 673-8092',
+  phoneDisplay: '(760) 769-1759 ',
   email: 'info@tmselectric.net',
   address: '565 Lands End Way',
   city: 'Oceanside',
@@ -134,9 +134,9 @@ export const services: Service[] = [
     icon: 'Home',
     heroImage: 'https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Licensed residential electrician inspecting a home fuse box in Oceanside, CA',
-    metaTitle: 'Residential Electrician Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Residential Electrician Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Need a trusted residential electrician in Oceanside, CA? TMS Electric handles home wiring, panel upgrades, lighting, outlets, and more. Licensed & insured. Call (760) 673-8092.',
+      'Need a trusted residential electrician in Oceanside, CA? TMS Electric handles home wiring, panel upgrades, lighting, outlets, and more. Licensed & insured. Call (760) 769-1759 .',
     h1: 'Residential Electrician in Oceanside, CA',
     tagline: 'Your home\'s electrical system, done right the first time.',
     description:
@@ -152,7 +152,7 @@ export const services: Service[] = [
     process: [
       {
         title: 'Schedule Your Visit',
-        description: 'Call us at (760) 673-8092 or request service online. We will find a time that works for you, often with same-day availability for urgent issues.',
+        description: 'Call us at (760) 769-1759  or request service online. We will find a time that works for you, often with same-day availability for urgent issues.',
       },
       {
         title: 'On-Site Assessment',
@@ -170,7 +170,7 @@ export const services: Service[] = [
       },
       {
         question: 'Do you offer free estimates for residential electrical work?',
-        answer: 'We provide upfront pricing on every job. For most residential repairs and installations, we can give you a clear estimate after a quick on-site assessment. Call (760) 673-8092 to schedule.',
+        answer: 'We provide upfront pricing on every job. For most residential repairs and installations, we can give you a clear estimate after a quick on-site assessment. Call (760) 769-1759  to schedule.',
       },
       {
         question: 'Can you upgrade the electrical panel in an older Oceanside home?',
@@ -189,9 +189,9 @@ export const services: Service[] = [
     icon: 'Building2',
     heroImage: 'https://images.pexels.com/photos/17842843/pexels-photo-17842843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Commercial electrician inspecting industrial electrical panels in Oceanside, CA',
-    metaTitle: 'Commercial Electrician Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Commercial Electrician Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Commercial electrician in Oceanside, CA for offices, retail, restaurants, and industrial facilities. Tenant improvements, wiring, lighting, panels. Call (760) 673-8092.',
+      'Commercial electrician in Oceanside, CA for offices, retail, restaurants, and industrial facilities. Tenant improvements, wiring, lighting, panels. Call (760) 769-1759 .',
     h1: 'Commercial Electrician in Oceanside, CA',
     tagline: 'Keep your business powered, safe, and up to code.',
     description:
@@ -229,7 +229,7 @@ export const services: Service[] = [
       },
       {
         question: 'Do you offer maintenance contracts for commercial properties?',
-        answer: 'We do. Preventative maintenance contracts help catch problems before they cause downtime. Call us at (760) 673-8092 to discuss a plan for your facility.',
+        answer: 'We do. Preventative maintenance contracts help catch problems before they cause downtime. Call us at (760) 769-1759  to discuss a plan for your facility.',
       },
       {
         question: 'Are you experienced with three-phase power systems?',
@@ -244,9 +244,9 @@ export const services: Service[] = [
     icon: 'Wrench',
     heroImage: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Electrician repairing a circuit breaker panel with colorful wires in Oceanside, CA',
-    metaTitle: 'Electrical Repair Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Electrical Repair Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Fast, reliable electrical repair in Oceanside, CA. Flickering lights, tripping breakers, dead outlets, and more. Licensed electricians. Call (760) 673-8092 today.',
+      'Fast, reliable electrical repair in Oceanside, CA. Flickering lights, tripping breakers, dead outlets, and more. Licensed electricians. Call (760) 769-1759  today.',
     h1: 'Electrical Repair in Oceanside, CA',
     tagline: 'Safe, lasting fixes for every electrical problem.',
     description:
@@ -262,7 +262,7 @@ export const services: Service[] = [
     process: [
       {
         title: 'Describe the Problem',
-        description: 'Call us at (760) 673-8092 and tell us what you are experiencing. We can often schedule same-day service for urgent repairs.',
+        description: 'Call us at (760) 769-1759  and tell us what you are experiencing. We can often schedule same-day service for urgent repairs.',
       },
       {
         title: 'Thorough Diagnosis',
@@ -276,7 +276,7 @@ export const services: Service[] = [
     faqs: [
       {
         question: 'How much does electrical repair cost in Oceanside?',
-        answer: 'Costs vary depending on the problem. We provide upfront pricing after diagnosing the issue, so you know the cost before we start any repair work. Call (760) 673-8092 for a quote.',
+        answer: 'Costs vary depending on the problem. We provide upfront pricing after diagnosing the issue, so you know the cost before we start any repair work. Call (760) 769-1759  for a quote.',
       },
       {
         question: 'Can you fix a breaker that keeps tripping?',
@@ -284,7 +284,7 @@ export const services: Service[] = [
       },
       {
         question: 'Is a burning smell from an outlet dangerous?',
-        answer: 'Yes, a burning smell or warm outlet is a serious safety hazard. Turn off the breaker to that circuit and call us immediately at (760) 673-8092. Do not use the outlet until it has been inspected and repaired.',
+        answer: 'Yes, a burning smell or warm outlet is a serious safety hazard. Turn off the breaker to that circuit and call us immediately at (760) 769-1759 . Do not use the outlet until it has been inspected and repaired.',
       },
       {
         question: 'Do you repair aluminum wiring in older homes?',
@@ -299,9 +299,9 @@ export const services: Service[] = [
     icon: 'Siren',
     heroImage: 'https://images.pexels.com/photos/34610697/pexels-photo-34610697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Emergency electrician crew repairing damaged electrical lines in Oceanside, CA',
-    metaTitle: 'Emergency Electrician Oceanside CA 24/7 | TMS Electric | (760) 673-8092',
+    metaTitle: 'Emergency Electrician Oceanside CA 24/7 | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Emergency electrician in Oceanside, CA. Power out, sparking outlets, burning smell? TMS Electric offers fast emergency electrical service. Call (760) 673-8092 now.',
+      'Emergency electrician in Oceanside, CA. Power out, sparking outlets, burning smell? TMS Electric offers fast emergency electrical service. Call (760) 769-1759  now.',
     h1: 'Emergency Electrician in Oceanside, CA',
     tagline: 'When you need an electrician now, we are ready.',
     description:
@@ -317,7 +317,7 @@ export const services: Service[] = [
     process: [
       {
         title: 'Call Immediately',
-        description: 'Call (760) 673-8092. If there is an active fire risk, turn off your main breaker and call 911 first. Otherwise, we will dispatch an electrician as quickly as possible.',
+        description: 'Call (760) 769-1759 . If there is an active fire risk, turn off your main breaker and call 911 first. Otherwise, we will dispatch an electrician as quickly as possible.',
       },
       {
         title: 'Rapid Response',
@@ -331,7 +331,7 @@ export const services: Service[] = [
     faqs: [
       {
         question: 'Do you offer 24/7 emergency electrical service in Oceanside?',
-        answer: 'Yes. TMS Electric provides emergency electrical service throughout Oceanside and North County San Diego. Call (760) 673-8092 any time, day or night.',
+        answer: 'Yes. TMS Electric provides emergency electrical service throughout Oceanside and North County San Diego. Call (760) 769-1759  any time, day or night.',
       },
       {
         question: 'What counts as an electrical emergency?',
@@ -339,11 +339,11 @@ export const services: Service[] = [
       },
       {
         question: 'What should I do if I smell burning from my electrical panel?',
-        answer: 'Turn off your main breaker immediately if you can do so safely. Do not touch the panel if it is hot. Call 911 if you see smoke or fire. Then call us at (760) 673-8092 for an emergency inspection and repair.',
+        answer: 'Turn off your main breaker immediately if you can do so safely. Do not touch the panel if it is hot. Call 911 if you see smoke or fire. Then call us at (760) 769-1759  for an emergency inspection and repair.',
       },
       {
         question: 'How fast can an emergency electrician get to my Oceanside home?',
-        answer: 'Response times depend on our current call volume and your location, but we prioritize emergencies and aim to reach Oceanside homes as quickly as possible. Call (760) 673-8092 and we will give you an ETA.',
+        answer: 'Response times depend on our current call volume and your location, but we prioritize emergencies and aim to reach Oceanside homes as quickly as possible. Call (760) 769-1759  and we will give you an ETA.',
       },
     ],
   },
@@ -354,9 +354,9 @@ export const services: Service[] = [
     icon: 'Zap',
     heroImage: 'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Electrician installing a new electrical panel upgrade in Oceanside, CA',
-    metaTitle: 'Electrical Panel Upgrade Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Electrical Panel Upgrade Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Upgrade your electrical panel in Oceanside, CA. 100 to 200 amp service, sub-panel installation, and panel replacement. Licensed electricians. Call (760) 673-8092.',
+      'Upgrade your electrical panel in Oceanside, CA. 100 to 200 amp service, sub-panel installation, and panel replacement. Licensed electricians. Call (760) 769-1759 .',
     h1: 'Electrical Panel Upgrade in Oceanside, CA',
     tagline: 'More power, more safety, more capacity for modern living.',
     description:
@@ -386,7 +386,7 @@ export const services: Service[] = [
     faqs: [
       {
         question: 'How much does a panel upgrade cost in Oceanside?',
-        answer: 'Panel upgrade costs depend on your current setup, the new panel size, and whether your service entrance needs updating. We provide free, upfront quotes. Call (760) 673-8092 to schedule an assessment.',
+        answer: 'Panel upgrade costs depend on your current setup, the new panel size, and whether your service entrance needs updating. We provide free, upfront quotes. Call (760) 769-1759  to schedule an assessment.',
       },
       {
         question: 'How long does an electrical panel upgrade take?',
@@ -398,7 +398,7 @@ export const services: Service[] = [
       },
       {
         question: 'Should I replace my Zinsco or Federal Pacific panel?',
-        answer: 'Yes. Zinsco and Federal Pacific Electric panels have known safety defects and are no longer manufactured. If your Oceanside home has one, we strongly recommend replacement. Call (760) 673-8092 to schedule.',
+        answer: 'Yes. Zinsco and Federal Pacific Electric panels have known safety defects and are no longer manufactured. If your Oceanside home has one, we strongly recommend replacement. Call (760) 769-1759  to schedule.',
       },
     ],
   },
@@ -409,9 +409,9 @@ export const services: Service[] = [
     icon: 'BatteryCharging',
     heroImage: 'https://images.pexels.com/photos/9799732/pexels-photo-9799732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Electric vehicle charger being plugged in at a home charging station in Oceanside, CA',
-    metaTitle: 'EV Charger Installation Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'EV Charger Installation Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'EV charger installation in Oceanside, CA. Level 2 home charging stations, Tesla Wall Connector, and commercial EV chargers. Licensed electricians. Call (760) 673-8092.',
+      'EV charger installation in Oceanside, CA. Level 2 home charging stations, Tesla Wall Connector, and commercial EV chargers. Licensed electricians. Call (760) 769-1759 .',
     h1: 'EV Charger Installation in Oceanside, CA',
     tagline: 'Charge at home. Wake up full every morning.',
     description:
@@ -441,7 +441,7 @@ export const services: Service[] = [
     faqs: [
       {
         question: 'How much does it cost to install an EV charger at home in Oceanside?',
-        answer: 'Installation costs depend on your panel capacity, the distance from the panel to the charger, and the charger model. We provide free, upfront quotes. Call (760) 673-8092 to schedule.',
+        answer: 'Installation costs depend on your panel capacity, the distance from the panel to the charger, and the charger model. We provide free, upfront quotes. Call (760) 769-1759  to schedule.',
       },
       {
         question: 'Can you install a Tesla Wall Connector?',
@@ -464,9 +464,9 @@ export const services: Service[] = [
     icon: 'Lightbulb',
     heroImage: 'https://images.pexels.com/photos/10164897/pexels-photo-10164897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Modern kitchen lighting installation with pendant lights in Oceanside, CA',
-    metaTitle: 'Lighting Installation Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Lighting Installation Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Lighting installation in Oceanside, CA. Recessed lighting, pendant lights, outdoor lighting, landscape lighting, and LED retrofits. Licensed electricians. Call (760) 673-8092.',
+      'Lighting installation in Oceanside, CA. Recessed lighting, pendant lights, outdoor lighting, landscape lighting, and LED retrofits. Licensed electricians. Call (760) 769-1759 .',
     h1: 'Lighting Installation in Oceanside, CA',
     tagline: 'Beautiful, efficient lighting that transforms your space.',
     description:
@@ -519,9 +519,9 @@ export const services: Service[] = [
     icon: 'Plug',
     heroImage: 'https://images.pexels.com/photos/36738243/pexels-photo-36738243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Electrical outlet and switch on a wall being repaired in Oceanside, CA',
-    metaTitle: 'Outlet & Switch Repair Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Outlet & Switch Repair Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Outlet and switch repair in Oceanside, CA. GFCI, AFCI, dead outlets, loose switches, and new installations. Licensed electricians. Call (760) 673-8092.',
+      'Outlet and switch repair in Oceanside, CA. GFCI, AFCI, dead outlets, loose switches, and new installations. Licensed electricians. Call (760) 769-1759 .',
     h1: 'Outlet & Switch Repair in Oceanside, CA',
     tagline: 'Safe, reliable power where you need it most.',
     description:
@@ -574,9 +574,9 @@ export const services: Service[] = [
     icon: 'Fan',
     heroImage: 'https://images.pexels.com/photos/3935316/pexels-photo-3935316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Ceiling fan installation in a living room in Oceanside, CA',
-    metaTitle: 'Ceiling Fan Installation Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Ceiling Fan Installation Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Ceiling fan installation in Oceanside, CA. Indoor and outdoor ceiling fans, fan with light, fan replacement, and junction box installation. Call (760) 673-8092.',
+      'Ceiling fan installation in Oceanside, CA. Indoor and outdoor ceiling fans, fan with light, fan replacement, and junction box installation. Call (760) 769-1759 .',
     h1: 'Ceiling Fan Installation in Oceanside, CA',
     tagline: 'Stay cool and comfortable year-round.',
     description:
@@ -629,9 +629,9 @@ export const services: Service[] = [
     icon: 'ClipboardCheck',
     heroImage: 'https://images.pexels.com/photos/8293680/pexels-photo-8293680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Electrician performing an electrical safety inspection with checklist in Oceanside, CA',
-    metaTitle: 'Electrical Inspection Oceanside CA | TMS Electric | (760) 673-8092',
+    metaTitle: 'Electrical Inspection Oceanside CA | TMS Electric | (760) 769-1759 ',
     metaDescription:
-      'Electrical inspection in Oceanside, CA. Whole-home safety inspections, pre-purchase inspections, and code compliance checks. Licensed electricians. Call (760) 673-8092.',
+      'Electrical inspection in Oceanside, CA. Whole-home safety inspections, pre-purchase inspections, and code compliance checks. Licensed electricians. Call (760) 769-1759 .',
     h1: 'Electrical Inspection in Oceanside, CA',
     tagline: 'Know your home is safe, up to code, and ready for the future.',
     description:
@@ -661,7 +661,7 @@ export const services: Service[] = [
     faqs: [
       {
         question: 'How much does an electrical inspection cost in Oceanside?',
-        answer: 'We offer affordable whole-home electrical inspections. The cost depends on the size and age of your home. Call (760) 673-8092 for a quote and to schedule.',
+        answer: 'We offer affordable whole-home electrical inspections. The cost depends on the size and age of your home. Call (760) 769-1759  for a quote and to schedule.',
       },
       {
         question: 'Should I get an electrical inspection before buying a home?',
