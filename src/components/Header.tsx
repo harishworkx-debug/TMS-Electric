@@ -109,6 +109,12 @@ export function Header() {
               </div>
             </div>
             <Link
+              to="/blog"
+              className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors"
+            >
+              Blog
+            </Link>
+            <Link
               to="/contact"
               className="px-3 py-2 text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors"
             >
@@ -168,6 +174,9 @@ export function Header() {
             </Link>
             <Link to="/electrician-escondido" className="block px-3 py-2 text-sm text-slate-300 hover:text-amber-400">
               Electrician Escondido
+            </Link>
+            <Link to="/blog" className="block px-3 py-2 text-sm font-medium text-slate-300 hover:text-amber-400">
+              Blog
             </Link>
             <Link to="/contact" className="block px-3 py-2 text-sm font-medium text-slate-300 hover:text-amber-400">
               Contact

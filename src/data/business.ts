@@ -2,8 +2,8 @@ export const business = {
   name: 'TMS Electric',
   shortName: 'TMS Electric',
   domain: 'tmselectric.net',
-  phone: '+1 760-673-8092',
-  phoneRaw: '17606738092',
+  phone: '+1 760-205-8556',
+  phoneRaw: '17602058556',
   phoneDisplay: '(760) 205-8556',
   email: 'info@tmselectric.net',
   address: '565 Lands End Way',
@@ -16,7 +16,7 @@ export const business = {
   mapsEmbed:
     'https://www.google.com/maps?q=TMS+Electric+565+Lands+End+Way+Oceanside+CA+92058&output=embed',
   rating: 5,
-  reviewCount: 73,
+  reviewCount: 7,
   yearsInBusiness: 15,
   founded: 2010,
   serviceArea: 'North County San Diego',
@@ -61,6 +61,8 @@ export const serviceAreas = [
       'Fire Mountain',
       'Loma Alta',
     ],
+    commonNeeds: ['Panel upgrades for 1970s coastal homes', 'Corrosion-resistant outdoor lighting', 'Smart home automation'],
+    uniqueContent: '<p>As Oceanside continues to grow, many coastal properties face unique electrical challenges like salt air corrosion and aging infrastructure. We specialize in upgrading older electrical panels and installing weather-resistant outdoor lighting tailored for Oceanside weather.</p>'
   },
   {
     slug: 'vista',
@@ -70,6 +72,8 @@ export const serviceAreas = [
     description:
       'Just inland from Oceanside, Vista is a growing city with a mix of residential and commercial properties. TMS Electric provides full electrical services throughout Vista, from downtown to the Shadowridge area.',
     neighborhoods: ['Downtown Vista', 'Shadowridge', 'Vista Village', 'Buena Creek', 'Montgomery Heights'],
+    commonNeeds: ['EV charger installations', 'Whole-home rewiring', 'Commercial tenant improvements'],
+    uniqueContent: '<p>Vista’s diverse mix of residential neighborhoods like Shadowridge and growing commercial zones requires versatile electrical expertise. Whether you need a dedicated circuit for a new EV charger or a complete electrical remodel for an older Vista home, our team has you covered.</p>'
   },
   {
     slug: 'carlsbad',
@@ -79,6 +83,8 @@ export const serviceAreas = [
     description:
       'A thriving coastal city known for its villages and business parks. TMS Electric serves Carlsbad homeowners and businesses with expert electrical installations, panel upgrades, and EV charger installations.',
     neighborhoods: ['Old Carlsbad', 'La Costa', 'Aviara', 'Bressi Ranch', 'Calavera Hills', 'Sage Creek'],
+    commonNeeds: ['Custom landscape lighting', 'Tesla Wall Connector installations', 'High-capacity panel upgrades'],
+    uniqueContent: '<p>Carlsbad homes often feature advanced electrical needs, from custom landscape lighting in Aviara to high-capacity EV chargers in Bressi Ranch. We provide premium electrical services that meet the high standards of Carlsbad homeowners, ensuring safety, aesthetics, and efficiency.</p>'
   },
   {
     slug: 'san-marcos',
@@ -88,6 +94,8 @@ export const serviceAreas = [
     description:
       'Home to Cal State San Marcos and a growing tech corridor, San Marcos is a key service area for TMS Electric. We handle everything from residential rewiring to commercial tenant improvements.',
     neighborhoods: ['San Marcos City Center', 'Lake San Marcos', 'Discovery Hills', 'Richland', 'Santa Fe Hills'],
+    commonNeeds: ['Student housing electrical maintenance', 'Smart home tech installations', 'Energy-efficient LED retrofits'],
+    uniqueContent: '<p>With the growth around Cal State San Marcos and new housing developments, San Marcos requires modern electrical solutions. We frequently help San Marcos residents upgrade to energy-efficient LED lighting and install smart home integrations safely.</p>'
   },
   {
     slug: 'encinitas',
@@ -97,6 +105,8 @@ export const serviceAreas = [
     description:
       'A picturesque coastal community with a mix of historic and modern homes. TMS Electric serves Encinitas with electrical repairs, lighting installations, and panel upgrades tailored to coastal living.',
     neighborhoods: ['Old Encinitas', 'Leucadia', 'Cardiff-by-the-Sea', 'Olivenhain', 'New Encinitas'],
+    commonNeeds: ['Coastal property electrical repairs', 'Decorative pendant lighting', 'Service upgrades for remodels'],
+    uniqueContent: '<p>Encinitas blends historic charm with modern coastal living. We are highly experienced in updating the electrical systems of older Encinitas homes, ensuring they meet current safety codes without compromising their unique architectural character.</p>'
   },
   {
     slug: 'escondido',
@@ -106,6 +116,8 @@ export const serviceAreas = [
     description:
       'One of North County\'s largest cities, Escondido has a diverse mix of older homes and new developments. TMS Electric provides comprehensive electrical services including panel upgrades, EV chargers, and emergency repairs.',
     neighborhoods: ['Downtown Escondido', 'North Escondido', 'South Escondido', 'East Valley', 'Hidden Meadows'],
+    commonNeeds: ['Agricultural & property electrical', 'HVAC circuit installations', 'Whole-home surge protection'],
+    uniqueContent: '<p>Escondido’s warmer climate means heavy reliance on AC units, which requires robust electrical panels. We specialize in installing dedicated HVAC circuits and whole-home surge protection for Escondido properties to handle peak summer loads.</p>'
   },
 ];
 
@@ -124,6 +136,7 @@ export type Service = {
   benefits: string[];
   process: { title: string; description: string }[];
   faqs: { question: string; answer: string }[];
+  contentSections?: { heading: string; content: string }[];
 };
 
 export const services: Service[] = [
@@ -368,6 +381,24 @@ export const services: Service[] = [
       'Zinsco and Federal Pacific panel replacement',
       'Smart panel installation with circuit monitoring',
       'Permit and inspection coordination',
+    ],
+    contentSections: [
+      {
+        heading: 'When Does Your Electrical Panel Need an Upgrade?',
+        content: '<p>Most electrical panels are designed to last 25 to 40 years. However, if your home was built before 1990 and still has its original panel, it is likely running at maximum capacity. Modern appliances, HVAC systems, and EV chargers demand far more power than older panels were designed to handle.</p>'
+      },
+      {
+        heading: 'Signs Your Electrical Panel Is Outdated',
+        content: '<ul><li class="mb-2"><strong>Frequent tripped breakers:</strong> A clear sign your panel cannot handle the load.</li><li class="mb-2"><strong>Flickering or dimming lights:</strong> Often caused by overloaded circuits when appliances turn on.</li><li class="mb-2"><strong>Rust or corrosion:</strong> Moisture inside the panel is a serious safety risk that requires immediate replacement.</li><li class="mb-2"><strong>Federal Pacific or Zinsco panels:</strong> These obsolete brands have known fire risks and should be replaced immediately.</li></ul>'
+      },
+      {
+        heading: '100 Amp vs 200 Amp Electrical Panel',
+        content: '<p>A 100-amp panel is typically insufficient for modern homes, especially those with central air conditioning, electric dryers, and EV chargers. Upgrading to a 200-amp panel ensures your home has the capacity to run all appliances safely and simultaneously, while leaving room for future additions like solar or a hot tub.</p>'
+      },
+      {
+        heading: 'Panel Upgrade Cost Factors in Oceanside',
+        content: '<p>The cost of a panel upgrade depends on several factors, including whether the service wires from the utility (SDG&E) need upgrading, if the meter needs relocating to meet current codes, and if stucco repair is required. We provide transparent, upfront estimates so you know exactly what to expect.</p>'
+      }
     ],
     process: [
       {
@@ -691,14 +722,17 @@ export const allRoutes = (() => {
   const routes: { path: string; priority: string; changefreq: string }[] = [
     { path: '', priority: '1.0', changefreq: 'weekly' },
     { path: 'contact', priority: '0.9', changefreq: 'monthly' },
+    { path: 'blog', priority: '0.8', changefreq: 'weekly' },
   ];
 
-  for (const service of services) {
-    routes.push({
-      path: `${service.slug}-${mainLocation.slug}`,
-      priority: '0.9',
-      changefreq: 'monthly',
-    });
+  for (const area of serviceAreas) {
+    for (const service of services) {
+      routes.push({
+        path: `${service.slug}-${area.slug}`,
+        priority: '0.9',
+        changefreq: 'monthly',
+      });
+    }
   }
 
   for (const area of serviceAreas) {

@@ -22,7 +22,7 @@ export function ServicesLocationPage({ locationSlug }: { locationSlug: string })
   const locName = loc.name;
 
   useSeo({
-    title: `Electrical Services ${locName}, CA | ${business.name} | ${business.phoneDisplay}`,
+    title: `Electrical Services in ${locName}, CA | ${business.name}`,
     description: `Professional electrical services in ${locName}, CA. Panel upgrades, EV chargers, lighting, repairs, inspections, and more. Licensed electricians. Call ${business.phoneDisplay}.`,
     canonical: path,
     schema: [
@@ -88,7 +88,7 @@ export function ServicesLocationPage({ locationSlug }: { locationSlug: string })
               Click any service below to learn more about how we can help with your specific electrical needs in {locName}.
             </p>
           </div>
-          <ServiceGrid />
+          <ServiceGrid locationSlug={loc.slug} />
         </div>
       </section>
 

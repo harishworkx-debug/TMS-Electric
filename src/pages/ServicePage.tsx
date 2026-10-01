@@ -9,22 +9,24 @@ import { ContactSection } from '@/components/ContactSection';
 import { ServiceGrid } from '@/components/ServiceGrid';
 import { CallButton } from '@/components/CallButton';
 import { CheckCircle2, Phone } from 'lucide-react';
-import { business, mainLocation, services, getService } from '@/data/business';
+import { business, services, getService, getLocation, mainLocation } from '@/data/business';
 import { Link } from 'react-router-dom';
+import { RecentProjects } from '@/components/RecentProjects';
 
-export function ServicePage({ serviceSlug }: { serviceSlug: string }) {
+export function ServicePage({ serviceSlug, locationSlug = 'oceanside' }: { serviceSlug: string, locationSlug?: string }) {
   const service = getService(serviceSlug);
+  const loc = getLocation(locationSlug) || mainLocation;
   if (!service) {
     return <div>Service not found</div>;
   }
 
-  const path = `/${service.slug}-${mainLocation.slug}`;
+  const path = `/${service.slug}-${loc.slug}`;
   const serviceName = service.title;
-  const locName = mainLocation.name;
+  const locName = loc.name;
 
   useSeo({
-    title: service.metaTitle,
-    description: service.metaDescription,
+    title: `${service.title} in ${locName}, CA | ${business.name}`,
+    description: `Need ${service.title.toLowerCase()} in ${locName}, CA? ${business.name} provides professional ${service.title.toLowerCase()} and electrical solutions. Call ${business.phoneDisplay}.`,
     canonical: path,
     schema: [
       buildLocalBusinessSchema(),
@@ -58,11 +60,57 @@ export function ServicePage({ serviceSlug }: { serviceSlug: string }) {
 
       <section className="bg-white pb-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none mb-12">
             <p className="text-lg text-slate-600 leading-relaxed">{service.description}</p>
           </div>
 
-          <div className="mt-10">
+          {service.contentSections ? (
+            service.contentSections.map((section, idx) => (
+              <div key={idx} className="mt-12">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                  {section.heading}
+                </h2>
+                <div 
+                  className="prose prose-lg max-w-none text-slate-600 marker:text-amber-500 prose-ul:pl-0"
+                  dangerouslySetInnerHTML={{ __html: section.content }} 
+                />
+              </div>
+            ))
+          ) : (
+            <>
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                  When Do You Need {service.shortTitle}?
+                </h2>
+                <p className="text-lg text-slate-600 leading-relaxed mb-6">
+                  Recognizing the right time for {serviceName.toLowerCase()} can save you from unexpected electrical failures. Whether you are dealing with frequent disruptions or planning a new project in {locName}, addressing it early ensures safety and compliance with current electrical codes.
+                </p>
+              </div>
+              
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                  Signs It Is Time for {service.shortTitle}
+                </h2>
+                <ul className="list-disc pl-6 text-lg text-slate-600 space-y-2 marker:text-amber-500">
+                  <li>Flickering lights or inconsistent power delivery</li>
+                  <li>Frequently tripping breakers or blown fuses</li>
+                  <li>Outdated components that do not support modern electrical needs</li>
+                  <li>Visible wear, rust, or damage to electrical systems</li>
+                </ul>
+              </div>
+
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                  {service.shortTitle} Cost Factors in {locName}
+                </h2>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  The cost of {serviceName.toLowerCase()} in {locName} varies based on the complexity of the project, required permits, and material costs. At TMS Electric, we provide upfront, transparent pricing before any work begins, so there are never any surprises.
+                </p>
+              </div>
+            </>
+          )}
+
+          <div className="mt-12">
             <h2 className="text-2xl font-bold text-slate-900 mb-6">
               What We Offer
             </h2>
@@ -138,12 +186,14 @@ export function ServicePage({ serviceSlug }: { serviceSlug: string }) {
 
       <FaqSection faqs={service.faqs} title={`${serviceName} ${locName} FAQs`} />
 
+      <RecentProjects />
+
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">
             Other Electrical Services in {locName}
           </h2>
-          <ServiceGrid />
+          <ServiceGrid locationSlug={loc.slug} />
         </div>
       </section>
 

@@ -2,16 +2,19 @@ import { useSeo } from '@/hooks/useSeo';
 import { buildLocalBusinessSchema, buildFaqSchema } from '@/lib/schema';
 import { Hero } from '@/components/Hero';
 import { TrustBar } from '@/components/TrustBar';
+import { Star } from 'lucide-react';
 import { ServiceGrid } from '@/components/ServiceGrid';
 import { ServiceAreaGrid } from '@/components/ServiceAreaGrid';
 import { FaqSection } from '@/components/FaqSection';
 import { CtaSection } from '@/components/CtaSection';
 import { ContactSection } from '@/components/ContactSection';
+import { RecentProjects } from '@/components/RecentProjects';
+import { ReviewsSection } from '@/components/ReviewsSection';
 import { business, mainLocation, services } from '@/data/business';
 
 export function HomePage() {
   useSeo({
-    title: `Electrician ${mainLocation.name}, CA | ${business.name} | ${business.phoneDisplay}`,
+    title: `Electrician in ${mainLocation.name}, CA | ${business.name}`,
     description: `Trusted licensed electrician in ${mainLocation.name}, CA. Residential & commercial electrical services, panel upgrades, EV chargers, emergency repairs. ${business.yearsInBusiness}+ years experience. Call ${business.phoneDisplay}.`,
     canonical: '/',
     schema: { ...buildLocalBusinessSchema(), ...buildFaqSchema(homeFaqs) },
@@ -20,10 +23,10 @@ export function HomePage() {
   return (
     <>
       <Hero
-        title={`Electrician in ${mainLocation.name}, CA`}
-        subtitle={`Licensed, trusted, and ready to help. TMS Electric has been powering ${mainLocation.name} homes and businesses for over ${business.yearsInBusiness} years with expert electrical service and honest pricing.`}
+        title={`Electrician in ${mainLocation.name}, CA – Residential & Commercial Electrical Services`}
+        subtitle={`Searching for a dependable Electrician ${mainLocation.name} CA? TMS Electric provides top-tier residential electrician and commercial electrician services. Whether you need prompt electrical repair, a 24/7 emergency electrician, panel upgrades, EV charger installation, custom lighting, or thorough electrical inspections, our licensed experts are here to help.`}
         backgroundImage="https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080"
-        backgroundAlt="Professional electrician working on a circuit breaker panel in Oceanside, CA"
+        backgroundAlt={`Professional electrician working on a circuit breaker panel in ${mainLocation.name}, CA`}
         location={mainLocation.name}
       />
       <TrustBar />
@@ -80,22 +83,56 @@ export function HomePage() {
         </div>
       </section>
 
+      <RecentProjects />
+
       <CtaSection
         title={`Need an Electrician in ${mainLocation.name}?`}
         subtitle="Call now for fast, friendly service and upfront pricing. We are ready to help with any electrical project, big or small."
         locationName={mainLocation.name}
       />
 
+      <ReviewsSection />
+
       <FaqSection faqs={homeFaqs} title={`${mainLocation.name} Electrician FAQs`} />
 
       <section className="py-16 bg-white border-t border-slate-100">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-6">
-            Your Trusted Local Electrician in {mainLocation.name}, CA
-          </h2>
-          <p className="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
-            At {business.name}, we pride ourselves on delivering top-tier electrical services for residential and commercial properties. Whether you need a simple outlet repair, a complete electrical panel upgrade, or a custom lighting installation, our team of licensed professionals is here to help. We are dedicated to safety, quality, and customer satisfaction, ensuring that every project is completed to the highest standards. Thank you for choosing us as your go-to electrical contractor in North County San Diego.
-          </p>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-6">
+                Meet Tyler, Your Local Oceanside Electrician
+              </h2>
+              <div className="prose prose-lg text-slate-600">
+                <p>
+                  As a locally owned business right here in Oceanside, California, we know the unique electrical challenges our coastal homes and commercial buildings face—from salt-air corrosion on outdoor panels to upgrading older 1970s wiring to handle modern EV chargers.
+                </p>
+                <p>
+                  When you call TMS Electric, you aren't getting a random subcontractor or an aggressive sales team. You are getting me, Tyler, a licensed C-10 electrical contractor (License #{business.license}) with over {business.yearsInBusiness} years of hands-on experience in North County San Diego. Whether we are rewiring a kitchen in Fire Mountain, running emergency troubleshooting in downtown Carlsbad, or upgrading a main breaker panel to 200 amps in Vista, we don't take shortcuts. We pull the right city permits, use premium materials, and clean up our own messes.
+                </p>
+                <p className="font-semibold text-slate-900">
+                  Real credentials. Real projects. Reliable power.
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src="https://images.pexels.com/photos/14319099/pexels-photo-14319099.jpeg?auto=compress&cs=tinysrgb&w=800&h=600" 
+                alt="Tyler from TMS Electric working on an Oceanside electrical panel" 
+                className="rounded-2xl shadow-xl ring-1 ring-black/5 object-cover h-[400px] w-full"
+              />
+              <div className="absolute -bottom-6 -left-6 sm:bottom-6 sm:-left-12 bg-white p-6 rounded-2xl shadow-xl ring-1 ring-black/5 max-w-[280px]">
+                <div className="flex gap-1 text-amber-400 mb-3">
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                  <Star className="w-5 h-5 fill-current" />
+                </div>
+                <p className="text-sm font-medium text-slate-900 italic">"Tyler goes the extra mile cleaning up other people's wiring messes. Highly recommend!"</p>
+                <p className="text-xs text-slate-500 mt-3 font-semibold">— Paul G., Local Client</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

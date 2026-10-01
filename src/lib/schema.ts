@@ -7,9 +7,15 @@ export function buildLocalBusinessSchema() {
     '@id': `https://${business.domain}/#business`,
     name: business.name,
     image: `https://${business.domain}/og-image.jpg`,
+    logo: `https://${business.domain}/logo.png`,
     url: `https://${business.domain}`,
     telephone: business.phone,
     priceRange: '$$',
+    sameAs: [
+      business.mapsUrl,
+      business.social.yelp,
+      business.social.facebook,
+    ].filter(Boolean),
     address: {
       '@type': 'PostalAddress',
       streetAddress: business.address,
@@ -39,10 +45,17 @@ export function buildLocalBusinessSchema() {
         closes: '16:30',
       },
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: business.rating,
-      reviewCount: business.reviewCount,
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Electrical Services',
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Residential Electrician' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Electrician' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Electrical Panel Upgrade' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'EV Charger Installation' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Electrical Repair' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Emergency Electrician' } },
+      ],
     },
     license: business.license,
   };

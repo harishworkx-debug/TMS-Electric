@@ -27,9 +27,9 @@ export function Hero({
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-900/60" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <div className="max-w-2xl">
-          <div className="flex items-center gap-2 mb-4">
+      <div className="relative w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div className="max-w-3xl">
+          <div className="flex flex-wrap items-center gap-3 mb-6">
             <div className="flex items-center gap-1 rounded-full bg-amber-400/20 px-3 py-1 text-amber-300">
               <Star className="h-4 w-4 fill-current" />
               <span className="text-sm font-semibold">{business.rating}.0 Rating</span>
@@ -40,10 +40,10 @@ export function Hero({
             </div>
           </div>
 
-          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl drop-shadow-lg">
             {title}
           </h1>
-          <p className="mt-4 text-lg text-slate-300 sm:text-xl leading-relaxed">
+          <p className="mt-6 text-lg text-slate-300 sm:text-xl leading-relaxed drop-shadow-md">
             {subtitle}
           </p>
 

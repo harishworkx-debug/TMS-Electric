@@ -8,9 +8,10 @@ import { CtaSection } from '@/components/CtaSection';
 import { ContactSection } from '@/components/ContactSection';
 import { ServiceGrid } from '@/components/ServiceGrid';
 import { CallButton } from '@/components/CallButton';
-import { CheckCircle2, Phone, MapPin } from 'lucide-react';
+import { CheckCircle2, Phone, MapPin, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { business, services, getLocation } from '@/data/business';
+import { RecentProjects } from '@/components/RecentProjects';
 
 export function LocationPage({ locationSlug }: { locationSlug: string }) {
   const loc = getLocation(locationSlug);
@@ -22,7 +23,7 @@ export function LocationPage({ locationSlug }: { locationSlug: string }) {
   const locName = loc.name;
 
   useSeo({
-    title: `Electrician ${locName}, CA | ${business.name} | ${business.phoneDisplay}`,
+    title: `Electrician in ${locName}, CA | ${business.name}`,
     description: `Need a licensed electrician in ${locName}, CA? TMS Electric provides residential & commercial electrical services, panel upgrades, EV chargers, emergency repairs. Call ${business.phoneDisplay}.`,
     canonical: path,
     schema: [
@@ -58,9 +59,35 @@ export function LocationPage({ locationSlug }: { locationSlug: string }) {
             Your Trusted Electrician in {locName}
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-6">{loc.description}</p>
+          
+          {/* Unique Location Content */}
+          {loc.uniqueContent && (
+            <div 
+              className="prose prose-lg max-w-none text-slate-600 mb-8 marker:text-amber-500"
+              dangerouslySetInnerHTML={{ __html: loc.uniqueContent }} 
+            />
+          )}
+
           <p className="text-lg text-slate-600 leading-relaxed">
             At TMS Electric, we are proud to serve the {locName} community with a full range of electrical services. Whether you need a simple outlet repair, a complete panel upgrade, or an EV charger installed at your home, our licensed electricians deliver clean, code-compliant work that stands the test of time. We are based just minutes away in {business.city}, so we can reach {locName} quickly for both scheduled appointments and emergency calls.
           </p>
+
+          {/* Location-Specific Common Needs */}
+          {loc.commonNeeds && loc.commonNeeds.length > 0 && (
+            <div className="mt-8 rounded-2xl bg-white border border-slate-200 p-6 shadow-sm">
+              <h3 className="font-bold text-slate-900 text-lg mb-4">
+                Common Electrical Needs in {locName}
+              </h3>
+              <ul className="space-y-3">
+                {loc.commonNeeds.map((need: string, idx: number) => (
+                  <li key={idx} className="flex items-center gap-3">
+                    <Zap className="h-5 w-5 text-amber-500 shrink-0" />
+                    <span className="text-slate-700 font-medium">{need}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div className="mt-8 rounded-2xl bg-amber-50 p-6 ring-1 ring-amber-100">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -87,7 +114,7 @@ export function LocationPage({ locationSlug }: { locationSlug: string }) {
             {services.map((s) => (
               <Link
                 key={s.slug}
-                to={`/${s.slug}-oceanside`}
+                to={`/${s.slug}-${loc.slug}`}
                 className="flex items-center gap-3 rounded-xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition-all hover:shadow-md hover:ring-amber-200"
               >
                 <CheckCircle2 className="h-5 w-5 text-amber-500 shrink-0" />
@@ -145,6 +172,8 @@ export function LocationPage({ locationSlug }: { locationSlug: string }) {
       />
 
       <FaqSection faqs={locationFaqs(locName)} title={`${locName} Electrician FAQs`} />
+
+      <RecentProjects />
 
       <section className="bg-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

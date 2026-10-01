@@ -89,6 +89,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} {business.name}. All rights reserved. CA License #{business.license}
           </p>
           <div className="flex gap-4 text-xs text-slate-500">
+            <Link to="/blog" className="hover:text-amber-400 transition-colors">Blog</Link>
             <Link to="/contact" className="hover:text-amber-400 transition-colors">Contact</Link>
             <Link to="/electrician-oceanside" className="hover:text-amber-400 transition-colors">Service Areas</Link>
           </div>
