@@ -81,7 +81,7 @@ export function ReviewsSection() {
         
         <div className="mt-12 text-center">
           <a 
-            href={business.social.yelp} // You can update this to the Google Maps link later
+            href={business.mapsUrl}
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-slate-300 hover:bg-slate-50 transition-colors"

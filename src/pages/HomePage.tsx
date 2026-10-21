@@ -15,7 +15,7 @@ import { business, mainLocation, services } from '@/data/business';
 export function HomePage() {
   useSeo({
     title: `Electrician in ${mainLocation.name}, CA | ${business.name}`,
-    description: `Trusted licensed electrician in ${mainLocation.name}, CA. Residential & commercial electrical services, panel upgrades, EV chargers, emergency repairs. ${business.yearsInBusiness}+ years experience. Call ${business.phoneDisplay}.`,
+    description: `Need an electrician in ${mainLocation.name}, CA? Contact ${business.name} for residential and commercial electrical repairs, panel upgrades, lighting and EV charger installation. Request service today.`,
     canonical: '/',
     schema: { ...buildLocalBusinessSchema(), ...buildFaqSchema(homeFaqs) },
   });

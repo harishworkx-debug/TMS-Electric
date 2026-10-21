@@ -380,4 +380,24 @@
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://www.tmselectric.net/blog/why-does-circuit-breaker-keep-tripping/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.tmselectric.net/blog/signs-you-need-electrical-panel-upgrade/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.tmselectric.net/blog/california-ev-charger-installation-requirements/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.tmselectric.net/blog/when-to-call-electrician-for-outlet-problem/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

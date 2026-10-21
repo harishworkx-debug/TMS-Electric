@@ -4,11 +4,11 @@ export function buildLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Electrician',
-    '@id': `https://${business.domain}/#business`,
+    '@id': `https://www.${business.domain}/#business`,
     name: business.name,
-    image: `https://${business.domain}/og-image.jpg`,
-    logo: `https://${business.domain}/logo.png`,
-    url: `https://${business.domain}`,
+    image: `https://www.${business.domain}/og-image.jpg`,
+    logo: `https://www.${business.domain}/logo.png`,
+    url: `https://www.${business.domain}/`,
     telephone: business.phone,
     priceRange: '$$',
     sameAs: [
@@ -116,7 +116,7 @@ export function buildBreadcrumbSchema(breadcrumbs: { name: string; url: string }
       '@type': 'ListItem',
       position: i + 1,
       name: b.name,
-      item: `https://${business.domain}${b.url}`,
+      item: `https://www.${business.domain}${b.url === '/' ? '/' : (b.url.endsWith('/') ? b.url : b.url + '/')}`,
     })),
   };
 }

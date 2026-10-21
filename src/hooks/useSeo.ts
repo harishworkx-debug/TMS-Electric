@@ -22,11 +22,16 @@ export function useSeo({ title, description, canonical, schema }: SeoProps) {
       el.setAttribute('content', content);
     };
 
+    const baseUrl = `https://www.${business.domain}`;
+    const rawPath = canonical || '';
+    const cleanPath = rawPath === '' || rawPath === '/' ? '/' : (rawPath.startsWith('/') ? rawPath : `/${rawPath}`).replace(/\/+$/, '') + '/';
+    const canonicalUrl = `${baseUrl}${cleanPath}`;
+
     ensureMeta('description', description);
     ensureMeta('og:title', title, 'property');
     ensureMeta('og:description', description, 'property');
     ensureMeta('og:type', 'website', 'property');
-    ensureMeta('og:url', `https://${business.domain}${canonical || ''}`, 'property');
+    ensureMeta('og:url', canonicalUrl, 'property');
     ensureMeta('twitter:card', 'summary_large_image');
     ensureMeta('twitter:title', title, 'property');
     ensureMeta('twitter:description', description, 'property');
@@ -37,7 +42,7 @@ export function useSeo({ title, description, canonical, schema }: SeoProps) {
       link.setAttribute('rel', 'canonical');
       document.head.appendChild(link);
     }
-    link.setAttribute('href', `https://${business.domain}${canonical || ''}`);
+    link.setAttribute('href', canonicalUrl);
 
     const schemaId = 'page-json-ld';
     let script = document.head.querySelector(`script[data-schema="${schemaId}"]`) as HTMLScriptElement | null;

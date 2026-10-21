@@ -312,13 +312,13 @@ export const services: Service[] = [
     icon: 'Siren',
     heroImage: 'https://images.pexels.com/photos/34610697/pexels-photo-34610697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
     heroAlt: 'Emergency electrician crew repairing damaged electrical lines in Oceanside, CA',
-    metaTitle: 'Emergency Electrician Oceanside CA 24/7 | TMS Electric | (760) 205-8556',
+    metaTitle: 'Emergency Electrician Oceanside CA | Rapid Dispatch | TMS Electric',
     metaDescription:
-      'Emergency electrician in Oceanside, CA. Power out, sparking outlets, burning smell? TMS Electric offers fast emergency electrical service. Call (760) 205-8556 now.',
+      'Urgent electrical emergencies in Oceanside, CA. Power out, sparking outlets, burning smell? TMS Electric offers rapid urgent response and safety dispatch. Call (760) 205-8556.',
     h1: 'Emergency Electrician in Oceanside, CA',
-    tagline: 'When you need an electrician now, we are ready.',
+    tagline: 'When electrical hazards strike, our licensed team is ready to respond.',
     description:
-      'Electrical emergencies do not keep business hours, and neither do we. If you have sparking outlets, a burning smell, a panel that is hot to the touch, or you have lost power to part of your home, call TMS Electric right away. Our emergency electricians serve Oceanside and all of North County San Diego with fast response times and the expertise to make your home safe again.',
+      'Electrical hazards do not wait, and immediate safety is critical. If you notice sparking outlets, a burning or fishy odor near your panel, a breaker box that is hot to the touch, or sudden partial power loss, contact TMS Electric right away. Our licensed Oceanside electricians prioritize emergency calls with fast local dispatch, immediate hazard stabilization, and code-compliant repairs.',
     benefits: [
       'Sparking or arcing outlet response',
       'Burning smell or hot panel investigation',
@@ -330,33 +330,33 @@ export const services: Service[] = [
     process: [
       {
         title: 'Call Immediately',
-        description: 'Call (760) 205-8556. If there is an active fire risk, turn off your main breaker and call 911 first. Otherwise, we will dispatch an electrician as quickly as possible.',
+        description: 'Call (760) 205-8556. If there is an active fire or severe smoke, turn off your main breaker safely and call 911 first.',
       },
       {
-        title: 'Rapid Response',
-        description: 'Our emergency electrician arrives as quickly as possible to assess the situation and make it safe.',
+        title: 'Rapid Dispatch',
+        description: 'Our emergency electrician dispatches promptly from our Oceanside base to evaluate the hazard on-site.',
       },
       {
         title: 'Safe & Stable',
-        description: 'We stabilize the immediate hazard, then provide a clear plan for any permanent repairs needed.',
+        description: 'We safely isolate and stabilize the electrical hazard, then provide transparent options for permanent repairs.',
       },
     ],
     faqs: [
       {
-        question: 'Do you offer 24/7 emergency electrical service in Oceanside?',
-        answer: 'Yes. TMS Electric provides emergency electrical service throughout Oceanside and North County San Diego. Call (760) 205-8556 any time, day or night.',
+        question: 'Do you offer emergency electrical service in Oceanside?',
+        answer: 'Yes. TMS Electric provides rapid urgent dispatch for dangerous electrical situations throughout Oceanside and North County San Diego. Call (760) 205-8556 right away for immediate assistance.',
       },
       {
         question: 'What counts as an electrical emergency?',
-        answer: 'Sparking outlets, a burning or fishy smell near electrical panels, a hot breaker panel, partial power loss, or any situation where you feel unsafe should be treated as an emergency. When in doubt, call us.',
+        answer: 'Sparking outlets, a burning or fishy smell near electrical panels, a hot breaker panel, partial power loss, or buzzing breaker switches should be treated as emergencies. When in doubt, shut off the affected circuit and call us.',
       },
       {
         question: 'What should I do if I smell burning from my electrical panel?',
-        answer: 'Turn off your main breaker immediately if you can do so safely. Do not touch the panel if it is hot. Call 911 if you see smoke or fire. Then call us at (760) 205-8556 for an emergency inspection and repair.',
+        answer: 'Turn off your main breaker immediately if you can do so safely. Do not touch the panel if it is hot. Call 911 if you see smoke or active fire. Then call us at (760) 205-8556 for an urgent inspection and repair.',
       },
       {
         question: 'How fast can an emergency electrician get to my Oceanside home?',
-        answer: 'Response times depend on our current call volume and your location, but we prioritize emergencies and aim to reach Oceanside homes as quickly as possible. Call (760) 205-8556 and we will give you an ETA.',
+        answer: 'We dispatch immediately from our local facility at 565 Lands End Way in Oceanside. Response time depends on current road conditions and active call priority, and we provide an upfront ETA over the phone.',
       },
     ],
   },
@@ -373,63 +373,75 @@ export const services: Service[] = [
     h1: 'Electrical Panel Upgrade in Oceanside, CA',
     tagline: 'More power, more safety, more capacity for modern living.',
     description:
-      'If your home still has a 100-amp panel, a fuse box, or a panel from the 1980s or earlier, it is time for an upgrade. Modern homes run air conditioning, EV chargers, electric dryers, and whole-home entertainment systems that older panels were never designed to handle. TMS Electric specializes in electrical panel upgrades throughout Oceanside, bringing your home up to 200-amp service safely and to code.',
+      'If your home still has a 100-amp panel, an outdated fuse box, or an obsolete breaker box from the 1970s or 1980s, your electrical system is likely operating at maximum capacity. Modern Oceanside homes run air conditioning, heat pumps, Level 2 EV chargers, and sensitive electronics that older electrical services were never engineered to support. TMS Electric specializes in residential and commercial electrical panel upgrades throughout Oceanside, bringing your service up to a safe, modern 200-amp capacity fully compliant with current California Electrical Code (CEC).',
     benefits: [
       '100-amp to 200-amp service upgrades',
       'Sub-panel installation for additions and ADUs',
       'Outdated fuse box replacement',
-      'Zinsco and Federal Pacific panel replacement',
+      'Zinsco, Sylvania, and Federal Pacific panel replacement',
       'Smart panel installation with circuit monitoring',
-      'Permit and inspection coordination',
+      'City of Oceanside permit and SDG&E utility coordination',
     ],
     contentSections: [
       {
         heading: 'When Does Your Electrical Panel Need an Upgrade?',
-        content: '<p>Most electrical panels are designed to last 25 to 40 years. However, if your home was built before 1990 and still has its original panel, it is likely running at maximum capacity. Modern appliances, HVAC systems, and EV chargers demand far more power than older panels were designed to handle.</p>'
+        content: '<p>Most residential electrical panels have an operational lifespan of 25 to 40 years. If your Oceanside home was built before 1990 and still has its original service equipment, it was likely built for a 60-amp or 100-amp electrical supply. Key triggers for an upgrade include adding central air conditioning, installing an EV fast charger, remodeling a kitchen, constructing an ADU (accessory dwelling unit), or adding rooftop solar. An upgrade protects your home from fire hazards and ensures uninterrupted power.</p>'
       },
       {
-        heading: 'Signs Your Electrical Panel Is Outdated',
-        content: '<ul><li class="mb-2"><strong>Frequent tripped breakers:</strong> A clear sign your panel cannot handle the load.</li><li class="mb-2"><strong>Flickering or dimming lights:</strong> Often caused by overloaded circuits when appliances turn on.</li><li class="mb-2"><strong>Rust or corrosion:</strong> Moisture inside the panel is a serious safety risk that requires immediate replacement.</li><li class="mb-2"><strong>Federal Pacific or Zinsco panels:</strong> These obsolete brands have known fire risks and should be replaced immediately.</li></ul>'
+        heading: 'What Does Repeated Breaker Tripping Actually Mean?',
+        content: '<p>A circuit breaker is a safety device designed to shut off power when it detects an unsafe condition. Repeated tripping usually indicates one of three distinct issues:</p><ul><li class="mb-2"><strong>Circuit Overload:</strong> Too many high-draw appliances (like a microwave and space heater) running on the same branch circuit simultaneously, exceeding the breaker’s amperage rating.</li><li class="mb-2"><strong>Short Circuit or Ground Fault:</strong> A hot wire contacting a neutral wire, ground wire, or metal conduit, creating dangerous sudden current spikes that require immediate professional diagnosis.</li><li class="mb-2"><strong>Breaker or Busbar Deterioration:</strong> Breakers weaken after decades of thermal cycles. If a breaker trips with little or no load, the breaker or the internal panel busbar may be damaged and pitted.</li></ul>'
       },
       {
-        heading: '100 Amp vs 200 Amp Electrical Panel',
-        content: '<p>A 100-amp panel is typically insufficient for modern homes, especially those with central air conditioning, electric dryers, and EV chargers. Upgrading to a 200-amp panel ensures your home has the capacity to run all appliances safely and simultaneously, while leaving room for future additions like solar or a hot tub.</p>'
+        heading: 'Panel Replacement vs. Panel Repair: What Is the Difference?',
+        content: '<p>Not every electrical panel issue requires a complete service overhaul. Understanding the difference helps you make the right investment:</p><ul><li class="mb-2"><strong>Electrical Panel Repair:</strong> Suitable when the main panel box, busbars, and service entrance wires are in pristine condition, but individual breaker switches have failed, connections have loosened, or a single circuit needs rewiring.</li><li class="mb-2"><strong>Full Electrical Panel Replacement:</strong> Mandatory when there is visible rust or corrosion from coastal Oceanside salt air, melted or burned busbars, ungrounded service equipment, or when the panel belongs to hazardous discontinued brands like <em>Federal Pacific Electric (Stab-Lok)</em> or <em>Zinsco</em>, which have documented failure rates where breakers fail to trip during short circuits.</li></ul>'
       },
       {
-        heading: 'Panel Upgrade Cost Factors in Oceanside',
-        content: '<p>The cost of a panel upgrade depends on several factors, including whether the service wires from the utility (SDG&E) need upgrading, if the meter needs relocating to meet current codes, and if stucco repair is required. We provide transparent, upfront estimates so you know exactly what to expect.</p>'
+        heading: 'What Key Factors Affect Your Panel Upgrade Estimate?',
+        content: '<p>When TMS Electric evaluates a panel upgrade in Oceanside, our transparent upfront estimates reflect several core engineering factors:</p><ul><li class="mb-2"><strong>Amperage Capacity:</strong> Upgrading from 100A to 200A versus installing a 400A split-meter system for large luxury properties.</li><li class="mb-2"><strong>Utility Service Line Configuration:</strong> Overhead service drop upgrades vs. underground conduit laterals that may require trenching.</li><li class="mb-2"><strong>SDG&E Meter Location Clearances:</strong> Modern utility regulations require specific working clearance distances from gas meters, hose bibs, and windows. If your older panel is too close to a gas line, relocating the meter main is required.</li><li class="mb-2"><strong>Grounding and Bonding Updates:</strong> California code requires driving two copper grounding rods spaced at least six feet apart and bonding the home’s interior metal water piping system.</li><li class="mb-2"><strong>Stucco and Finish Repairs:</strong> Flush-mount exterior panels in stucco walls require careful cutting and clean patching compared to surface-mount boxes.</li></ul>'
+      },
+      {
+        heading: 'Permit and City Inspection Requirements in Oceanside',
+        content: '<p>In Oceanside and throughout San Diego County, performing an electrical main panel change-out without a building permit is illegal and can void your homeowners insurance in the event of an electrical fire. TMS Electric pulls all required permits with the City of Oceanside Development Services Department and manages the coordination with San Diego Gas & Electric (SDG&E) for the meter disconnect and re-energization. We arrange the city building inspector walk-through so you receive a verified, signed certificate of completion.</p>'
+      },
+      {
+        heading: 'How Electrical Capacity Is Evaluated for EV Chargers & New Appliances',
+        content: '<p>Before adding a 40-amp, 50-amp, or 60-amp Level 2 EV charging circuit, our electricians perform a <strong>NEC Article 220 Load Calculation</strong>. This calculation analyzes:</p><ul><li class="mb-2">General lighting and receptacle load based on home square footage.</li><li class="mb-2">Small appliance branch circuits (kitchen, laundry, bathrooms).</li><li class="mb-2">Fixed major appliances (range, oven, water heater, HVAC compressor).</li><li class="mb-2">Continuous loads (EV charging runs continuously for hours, requiring a 125% safety sizing factor under the National Electrical Code).</li></ul><p>If your calculated baseline load leaves insufficient headroom on a 100-amp panel, upgrading to 200-amp service prevents dangerous main breaker trips and protects your EV investment.</p>'
       }
     ],
     process: [
       {
-        title: 'Load Assessment',
-        description: 'We calculate your home\'s electrical load and recommend the right panel size for your current and future needs, including EV charging and solar.',
+        title: 'NEC Load Assessment',
+        description: 'We evaluate your home\'s existing panel condition, calculate electrical demand, and determine the exact capacity needed for current appliances, EV chargers, and future solar.',
       },
       {
-        title: 'Permit & Installation',
-        description: 'We pull all necessary permits, install your new panel to code, and coordinate the utility connection. Most upgrades are completed in a single day.',
+        title: 'Permit & SDG&E Coordination',
+        description: 'We pull official building permits with the City of Oceanside, coordinate the meter disconnect with SDG&E, and install your new 200A panel to California Electrical Code.',
       },
       {
-        title: 'Inspection & Activation',
-        description: 'We schedule the city inspection, walk you through your new panel, and make sure every circuit is properly labeled.',
+        title: 'City Inspection & Final Sign-Off',
+        description: 'We schedule the municipal building inspection, verify all dual ground rods and bonding, ensure every circuit breaker is clearly labeled, and leave your home spotless.',
       },
     ],
     faqs: [
       {
-        question: 'How much does a panel upgrade cost in Oceanside?',
-        answer: 'Panel upgrade costs depend on your current setup, the new panel size, and whether your service entrance needs updating. We provide free, upfront quotes. Call (760) 205-8556 to schedule an assessment.',
+        question: 'How much does an electrical panel upgrade cost in Oceanside?',
+        answer: 'A standard 100-amp to 200-amp panel upgrade in Oceanside typically ranges from $2,800 to $4,500 depending on utility line location (overhead vs. underground), SDG&E meter clearances, permit fees, and grounding requirements. We provide written, upfront estimates before any work begins.',
       },
       {
         question: 'How long does an electrical panel upgrade take?',
-        answer: 'Most residential panel upgrades are completed in a single day. We coordinate with SDG&E for any service upgrades and handle all permits and inspections.',
+        answer: 'Most single-family residential panel upgrades are completed in a single day. Power is typically disconnected in the morning during SDG&E coordination and restored by late afternoon once the new equipment is in place.',
       },
       {
         question: 'Do I need a 200-amp panel for an EV charger?',
-        answer: 'Most Level 2 EV chargers require a 50-amp dedicated circuit. If your current panel is 100 amps, you may need an upgrade to 200 amps to safely support EV charging along with your other loads.',
+        answer: 'In most homes with 100-amp service, adding a 50-amp Level 2 EV charger exceeds safe continuous load thresholds under NEC Article 220. Upgrading to a 200-amp panel ensures you can charge your vehicle at maximum speed while running your A/C and household appliances simultaneously.',
       },
       {
-        question: 'Should I replace my Zinsco or Federal Pacific panel?',
-        answer: 'Yes. Zinsco and Federal Pacific Electric panels have known safety defects and are no longer manufactured. If your Oceanside home has one, we strongly recommend replacement. Call (760) 205-8556 to schedule.',
+        question: 'Why must Federal Pacific and Zinsco panels be replaced?',
+        answer: 'Zinsco and Federal Pacific Electric (FPE) panels are obsolete and notorious for safety failures where circuit breakers fail to trip during direct overcurrents or short circuits, causing busbars to melt and creating serious fire hazards. Many insurance carriers refuse coverage until these panels are upgraded.',
+      },
+      {
+        question: 'Does TMS Electric handle the City of Oceanside building permit?',
+        answer: 'Yes. We handle the entire permitting process with the City of Oceanside, coordinate scheduling with SDG&E, and accompany the city building inspector for final sign-off.',
       },
     ],
   },

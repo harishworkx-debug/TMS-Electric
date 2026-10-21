@@ -39,7 +39,7 @@ export function LocationPage({ locationSlug }: { locationSlug: string }) {
   return (
     <>
       <Hero
-        title={`Electrician in ${locName}, CA`}
+        title={loc.slug === 'oceanside' ? `Licensed Electricians in Oceanside, CA` : `Electrician Serving ${locName}, CA`}
         subtitle={`Licensed electrician serving ${locName} and the surrounding North County San Diego area. TMS Electric delivers reliable residential and commercial electrical services with upfront pricing and ${business.yearsInBusiness}+ years of experience.`}
         backgroundImage="https://images.pexels.com/photos/4981793/pexels-photo-4981793.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080"
         backgroundAlt={`Professional electrician installing wiring in ${locName}, CA`}

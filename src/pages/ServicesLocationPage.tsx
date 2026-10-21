@@ -22,8 +22,8 @@ export function ServicesLocationPage({ locationSlug }: { locationSlug: string })
   const locName = loc.name;
 
   useSeo({
-    title: `Electrical Services in ${locName}, CA | ${business.name}`,
-    description: `Professional electrical services in ${locName}, CA. Panel upgrades, EV chargers, lighting, repairs, inspections, and more. Licensed electricians. Call ${business.phoneDisplay}.`,
+    title: `Electrical Services & Contractor Solutions in ${locName}, CA | ${business.name}`,
+    description: `Complete residential and commercial electrical project services in ${locName}, CA. Upgrades, rewiring, EV charging, lighting, and code compliance. Free estimates.`,
     canonical: path,
     schema: [
       buildLocalBusinessSchema(),
@@ -38,8 +38,8 @@ export function ServicesLocationPage({ locationSlug }: { locationSlug: string })
   return (
     <>
       <Hero
-        title={`Electrical Services in ${locName}, CA`}
-        subtitle={`Comprehensive residential and commercial electrical services in ${locName}. From panel upgrades to EV chargers, lighting to emergency repairs, TMS Electric is your trusted local electrician in North County San Diego.`}
+        title={`Comprehensive Electrical Services in ${locName}, CA`}
+        subtitle={`Full-scope residential and commercial electrical solutions in ${locName}. From 200A panel upgrades to EV charger installations and property remodels, TMS Electric delivers code-compliant craftsmanship across North County.`}
         backgroundImage="https://images.pexels.com/photos/14319099/pexels-photo-14319099.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080"
         backgroundAlt={`Electrical services being performed by a licensed electrician in ${locName}, CA`}
         location={locName}
